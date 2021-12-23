@@ -155,12 +155,6 @@ app.post("/insertDailySales", async (req, res) => {
 
 app.get("/dailySales", async (req, res) => {
   try {
-    // const arr1 = [];
-    // const arr2 = [];
-    // const arr3 = [];
-    // const arr4 = [];
-    // const arr5 = [];
-
     const end = moment().subtract(5, "days");
     var dailySales = await PurchaseModel.find({
       createdAt: { $gte: end },
