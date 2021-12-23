@@ -1,0 +1,4 @@
+.rowsContainer {
+  display: "flex";
+  flex-direction: "column";
+}
